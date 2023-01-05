@@ -7,6 +7,7 @@ import { LeftComponent } from './left/left.component';
 import { CenterComponent } from './center/center.component';
 import { RightComponent } from './right/right.component';
 import { HeaderComponent } from './header/header.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

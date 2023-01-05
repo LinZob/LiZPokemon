@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-center',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./center.component.scss']
 })
 export class CenterComponent implements OnInit {
+
+  @Input() impImg : string[] = [];
 
   constructor() { }
 
