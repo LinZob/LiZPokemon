@@ -28,10 +28,42 @@ export class AppComponent implements OnInit {
 
   impID(id : number){
     this.varID = id;
+    this.sDataserv.findName(this.varID).subscribe({
+      next:(value)=>{
+        this.varPokemon1=value;
+      },
+  
+      error:(err)=>{
+        console.debug('Error',err);
+      }
+    });
+
+    this.varPokemon2.fromPokemon(this.varPokemon1);
+    this.arrImg = this.varPokemon2.getImageUrl();
+    this.arrMoves = this.varPokemon2.getMoves();
+    this.varName = this.varPokemon2.getName();
+    this.varID = this.varPokemon2.getID();
+
   }
 
   impName(name : string){
     this.varName = name;
+    this.sDataserv.findID(this.varName).subscribe({
+      next:(value)=>{
+        this.varPokemon1=value;
+      },
+  
+      error:(err)=>{
+        console.debug('Error',err);
+      }
+    });
+
+    this.varPokemon2.fromPokemon(this.varPokemon1);
+    this.arrImg = this.varPokemon2.getImageUrl();
+    this.arrMoves = this.varPokemon2.getMoves();
+    this.varName = this.varPokemon2.getName();
+    this.varID = this.varPokemon2.getID();
+
   }
 
 
