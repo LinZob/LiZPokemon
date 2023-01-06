@@ -1,9 +1,6 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, Input } from '@angular/core';
 import { Pokemon, ShortPokemon } from './pokeClass';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { PokeHttpService } from './poke-http.service';
-import { Observable } from 'rxjs';
-import { TitleStrategy } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +15,7 @@ export class AppComponent implements OnInit {
   arrImg : string[] = [];
   arrMoves : string[] = [];
   varPokemon1 = new Pokemon;
-  varPokemon2 = new ShortPokemon;
+  varPokemon2 = new ShortPokemon;  
 
 
   constructor(private sDataserv:PokeHttpService) {
@@ -27,6 +24,14 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
+  }
+
+  impID(id : number){
+    this.varID = id;
+  }
+
+  impName(name : string){
+    this.varName = name;
   }
 
 

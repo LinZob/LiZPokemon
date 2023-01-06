@@ -1,1 +1,19 @@
-<p>header works!</p>
+
+<nav class="navbar-fixed-top">
+
+<div class="card-container card-header"> 
+
+    <div class="row">
+        <div class="col-4">
+            <input class="card" type="number" id="ID" placeholder="Enter ID" required [(ngModel)]="varID" >
+        </div>
+        <div class="col-1">
+            <button class="btn card" (click)="clickButton()">Suche</button>
+        </div>
+        <div class="col-4">            
+            <input type="text" class="card" id="name" placeholder="Enter name" required [(ngModel)]="varName">
+        </div>
+    </div>
+
+</div>
+</nav>

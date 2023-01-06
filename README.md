@@ -1,3 +1,15 @@
+# Zeitschiene
+
+vor dem ersten Push Literatur usw. 
+
+1/2 Stunde Rohfassung mit mögl. Komponenten und Services im Push Start
+
+2 1/2 Stunden für Http Zugriff
+
+1 Stunde für Eingabe in header und Umordnung von Komponenten
+
+
+
 # LiZPokemon
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.

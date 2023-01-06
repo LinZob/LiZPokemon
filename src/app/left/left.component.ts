@@ -9,7 +9,7 @@ import { Stats } from '../pokeClass';
 export class LeftComponent implements OnInit {
 
   @Input() impName : string = 'dummy' ;
-  @Input() impID: number = 0;
+  @Input() impID: number = 12;
   @Input() impStats:  Array<Stats> = [];
 
   constructor() { }

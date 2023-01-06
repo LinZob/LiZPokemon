@@ -1,16 +1,16 @@
 
-<div class="container">
-  <div class="row">
-    <button class="btn btn-default" (click)="search()">Suche</button>
-    <app-header></app-header>
+<div class="container-xl">
+  <div>
+    <app-header (evName)="impName($event)" (evID)="impID($event)" ></app-header>
   </div>
     <div class="row">
-      <div class="col-4"><app-left [impName]="varName" [impID]="varPokemon2.getID()" [impStats]="varPokemon2.getStats()"></app-left></div>
-      <div class="col-4"><app-center [impImg]="arrImg"></app-center></div>
+      <app-center [impImg]="arrImg"></app-center>
+    </div>
+    <div class="row">
+      <div class="col-6"><app-left [impName]="varName" [impID]="varID" [impStats]="varPokemon2.getStats()"></app-left></div>
       <div class="col-4"><app-right [impMoves]="arrMoves"></app-right></div>
     </div>
   <div class="row">
-    
     <app-navbar></app-navbar>
   </div>
 </div>
