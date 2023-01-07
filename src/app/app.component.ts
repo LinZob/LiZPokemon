@@ -10,8 +10,8 @@ import { PokeHttpService } from './poke-http.service';
 
 export class AppComponent implements OnInit {
 
-  varName = 'dummy';
-  varID = 1;
+  varName = 'Name';
+  varID = 0;
   arrImg : string[] = [];
   arrMoves : string[] = [];
   varPokemon1 = new Pokemon;
@@ -25,6 +25,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
+  
 
   impID(id : number){
     this.varID = id;
