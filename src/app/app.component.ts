@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges, Input } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, SimpleChanges } from '@angular/core';
 import { Pokemon, ShortPokemon } from './pokeClass';
 import { PokeHttpService } from './poke-http.service';
 
@@ -25,9 +25,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
-  
-
+ 
   impID(id : number){
     this.varID = id;
     this.sDataserv.findName(this.varID).subscribe({
@@ -68,27 +66,6 @@ export class AppComponent implements OnInit {
 
   }
 
-
-  search():void{
-
-    this.sDataserv.findName(this.varID).subscribe({
-      next:(value)=>{
-        this.varPokemon1=value;
-      },
-  
-      error:(err)=>{
-        console.debug('Error',err);
-      }
-    });
-
-    this.varPokemon2.fromPokemon(this.varPokemon1);
-    this.arrImg = this.varPokemon2.getImageUrl();
-    this.arrMoves = this.varPokemon2.getMoves();
-    this.varName = this.varPokemon2.getName();
-    this.varID = this.varPokemon2.getID();
-
-
-    }
 
 
 

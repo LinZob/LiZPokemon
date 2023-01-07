@@ -4,14 +4,15 @@
 <div class="card-container card-header"> 
 
     <div class="row">
-        <div class="col-4">
-            <input class="card" type="number" id="ID" placeholder="Enter ID" required [(ngModel)]="varID" >
+        <div class="col-5">
+            <h5>ID: <input class="card" type="number" id="ID" placeholder="Enter ID" required [(ngModel)]="varID" ></h5>
         </div>
         <div class="col-1">
             <button class="btn card" (click)="clickButton()">Suche</button>
+            2x klicken
         </div>
-        <div class="col-4">            
-            <input type="text" class="card" id="name" placeholder="Enter name" required [(ngModel)]="varName">
+        <div class="col-5">            
+            <h5>Name: <input type="text" class="card" id="name" placeholder="Enter name" required [(ngModel)]="varName"></h5>
         </div>
     </div>
 

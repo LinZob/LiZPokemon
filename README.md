@@ -8,6 +8,11 @@ vor dem ersten Push Literatur usw.
 
 1 Stunde für Eingabe in header und Umordnung von Komponenten
 
+1/2 Stunde für linke Seite und Bildleiste
+
+1 1/2 Stunden für rechte Seite und header
+
+nach Ende der Zeit konnte ich noch immer nicht das Problem mit dem Doppelten Klick lösen 
 
 
 # LiZPokemon
